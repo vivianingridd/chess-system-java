@@ -1,15 +1,17 @@
 package boardgame;
 
+//pacote correspondente a camada de tabuleiro
+
 public class Position {
 	
-	private int row;
+	private int row; //atributo linha e coluna
 	
 	private int column;
 
-	public Position(int row, int column) {
+	public Position(int row, int column)  {
 		this.row = row;
 		this.column = column;
-	}
+	} //construtor
 
 	public int getRow() {
 		return row;
@@ -27,10 +29,10 @@ public class Position {
 		this.column = column;
 	}
 	
-	@Override  //toString para imprimir a posição na tela
+	@Override  //toString para imprimir a posicao na tela
 	public String toString() {
 		
-		return row + "," + column;
+		return row + "," + column; //imprimir linha com a coluna
 	}
 	
 }
